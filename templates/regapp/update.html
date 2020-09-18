@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>update</title>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+    form{
+        border: 1px grey solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: gainsboro;
+    }
+    body{
+        background-color: darkslategray;
+        margin: 50px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h3 class="text-center"style="color: white">Update Product Details</h3><br>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form }}<br>
+                <center>
+                    <input type="submit"value="Update" class="btn btn-success">
+                    <input type="reset"value="Clear" class="btn btn-danger"> <br><br>
+                    <a href="/#/" class="btn btn-success">Go To Home Page</a>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
